@@ -1,0 +1,10 @@
+body {
+    background: url('assets/train.peg') no-repeat center center fixed;
+
+}
+
+.jumbotron {
+    color: white;
+    background-color: lightcyan;
+    min-width: 800px;
+}
