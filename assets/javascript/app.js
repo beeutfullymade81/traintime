@@ -43,8 +43,8 @@ database.ref().on("value", function(snapshot) {
     var curTime = moment();
 
  var firstTimeConverted = moment(trainTime, "hh:mm").subtract(1, "years")
-var tdifference  = moment().diff(moment(tTime), "minutes")
-var remainder = moment().diff(moment(tTime), "minutes") % freq;
+var tdifference  = moment().diff(moment(firstTimeConverted), "minutes")
+var remainder = moment().diff(moment(firstTimeConverted), "minutes") % freq;
 var minutesLeft = freq - remainder;
 var arrivalTime =  moment().add(minutesLeft, "m").format("hh:mm A");
 
